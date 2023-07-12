@@ -1,0 +1,28 @@
+{{!-- <div>
+    <h1>CHAT:</h1>
+    <input id="textbox">
+    <p id="log"></p>
+</div> --}}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productos</title>
+</head>
+<body>
+  <h1>Listado de Productos</h1>
+  <ul>
+    {{#each products}}
+      <li>
+        <strong>Title:</strong> {{title}}<br>
+        <strong>Description:</strong> {{description}}<br>
+        <strong>Price:</strong> {{price}}<br>
+        <!-- Agregaria aca los dema campos a mostrasr-->
+      </li>
+    {{/each}}
+  </ul>
+</body>
+</html>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/home.js"></script>
